@@ -90,7 +90,7 @@ async function startCheckout() {
         expiryDate: 'MM/YY',
         securityCodeThreeDigits: '123',
         securityCodeFourDigits: '1234',
-        holderName: 'J. Smith'
+        holderName: 'JJ. Smith'
       }
     }).mount('#component-container');
 
