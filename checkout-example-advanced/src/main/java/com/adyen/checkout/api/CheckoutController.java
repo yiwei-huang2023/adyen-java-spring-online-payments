@@ -73,7 +73,7 @@ public class CheckoutController {
         paymentRequest.setReturnUrl(request.getScheme() + "://" + host + "/api/handleShopperRedirect"); // Redirect flow
 
         paymentRequest.setAmount(amount);
-
+log.debug("aaaaaaaaaaaaaaaaaa");
         // Set countryCode and lineItems fields, which is required for some payment methods (e.g. Klarna)
         paymentRequest.setCountryCode("NL");
         paymentRequest.setLineItems(Arrays.asList(
