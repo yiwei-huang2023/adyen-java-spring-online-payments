@@ -44,7 +44,7 @@ public class CheckoutController {
         PaymentMethodsRequest paymentMethodsRequest = new PaymentMethodsRequest();
         paymentMethodsRequest.setMerchantAccount(this.applicationConfiguration.getAdyenMerchantAccount());
         paymentMethodsRequest.setChannel(PaymentMethodsRequest.ChannelEnum.WEB);
-
+        log.debug("Sending request to /paymentMethods");
         log.info("Sending request to /paymentMethods");
         PaymentMethodsResponse response = paymentsApi.paymentMethods(paymentMethodsRequest);
         log.info("Adyen: /paymentMethods response: {}", response);
